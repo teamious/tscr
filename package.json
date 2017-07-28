@@ -1,26 +1,30 @@
 {
   "name": "tscr",
-  "version": "1.0.10",
+  "version": "2.0.1",
   "description": "",
   "scripts": {
     "start": "tsc -w",
-    "build": "tsc"
+    "build": "tsc",
+    "clean": "rm -f bin/tscr.js"
   },
   "bin": {
     "tscr": "./bin/tscr.js"
   },
+  "files": [
+    "template/",
+    "bin/tscr.js"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/fs-extra": "^4.0.0",
     "cross-spawn": "^5.1.0",
-    "fs-extra": "^1.0.0"
+    "fs-extra": "^1.0.0",
+    "minimist": "^1.2.0"
   },
   "devDependencies": {
     "@types/minimist": "^1.2.0",
     "@types/node": "^8.0.17",
-    "fs-extra": "^1.0.0",
-    "minimist": "^1.2.0",
     "typescript": "^2.4.2"
   }
 }
