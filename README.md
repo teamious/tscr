@@ -19,10 +19,10 @@ It will also create a `docs` folder that acts as a website to test your code.
 
 `tscr` is a CLI tool to quickly template a project that uses:
 
-    - Typescript
-    - React
-    - Webpack
-    - Sass
+- Typescript
+- React
+- Webpack
+- Sass
 
 There are a few assumptions baked into the webpack build.
 
