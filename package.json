@@ -1,11 +1,12 @@
 {
   "name": "tscr",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "",
   "scripts": {
     "start": "tsc -w",
     "build": "tsc",
-    "clean": "rm -f bin/tscr.js"
+    "clean": "rm -f bin/tscr.js",
+    "publish:patch": "npm run clean && npm run build && npm version patch -f && npm publish"
   },
   "bin": {
     "tscr": "./bin/tscr.js"
