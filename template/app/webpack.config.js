@@ -40,7 +40,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name]-[hash].js',
-        publicPath: '',
+        publicPath: '/',
     },
 
     devtool: 'source-map',
@@ -65,7 +65,7 @@ module.exports = {
             },
 
             {
-                test: /\.(s)css$/,
+                test: /\.s?css$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: ['css-loader', 'sass-loader']
@@ -98,6 +98,6 @@ module.exports = {
             faviconUrl: faviconUrl,
         }),
 
-        new ExtractTextPlugin('style-[hash].css'),
+        new ExtractTextPlugin('style-[name]-[hash].css'),
     ]
 };
